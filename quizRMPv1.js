@@ -35,7 +35,7 @@ $(document).ready(function () {
         };
 
         var submit = function (selectedValue) {
-            console.log(selectedValue);
+            qCounter++;
             if (selectedValue === questions[qCounter].correctAnswer) {
                 alert('Correct Answer!');
                 correctAnswers++;
@@ -45,10 +45,8 @@ $(document).ready(function () {
             }
             if (counter < questions.length ) {
                 counter++;
-                qCounter++;
             }
-            else {
-                qCounter++;
+            else {   
                 complete();
             }
             currentTotal.empty(); next(); 
@@ -61,8 +59,7 @@ $(document).ready(function () {
         };
         var complete = function () {
             $('#quizSection').empty();
-            var total = 'You answered ' + correctAnswers + ' out of ' + questions.length + ' questions correctly!';
-            $('#score').html(total);
+            $('#score').html('You answered ' + correctAnswers + ' out of ' + questions.length + ' questions correctly!');
         };
         return { init: init };
 }(questions);
