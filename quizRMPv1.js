@@ -22,39 +22,43 @@ $(document).ready(function () {
 
     var quiz = function (ques) {
 
-        var counter = 1, qCounter = 0, correctAnswers = 0, questionBox = $('#question'), ansOne = $('label[for="ansOne"]'), ansTwo = $('label[for="ansTwo"]'), section = $('section > h2'), q = $('.qq'), currentTotal = $('#currentTotal'), questions = ques;
+        var counter = 1, qCounter = 0, correctAnswers = 0, questionBox = $('#question'), 
+        ansOne = $('label[for="ansOne"]'), ansTwo = $('label[for="ansTwo"]'), section = $('section > h2'), 
+        q = $('.qq'), currentTotal = $('#currentTotal'), questions = ques;
 
         $('#enter').on('click', function () {
             var selectedValue = $("input[type='radio'][name='quiz']:checked").val();
             submit(selectedValue);
-        });       
-        var init = function () { 
+        });
+        var init = function () {
             ansOne.append(questions[qCounter].answer1);
             ansTwo.append(questions[qCounter].answer2);
             questionBox.html('Question ' + counter + " :" + questions[qCounter].question);
         };
 
         var submit = function (selectedValue) {
-            qCounter++;
+            
             if (selectedValue === questions[qCounter].correctAnswer) {
                 alert('Correct Answer!');
                 correctAnswers++;
+                
             }
             else {
                 alert('Wrong Answer!');
             }
-            if (counter < questions.length ) {
+            if (counter < questions.length) {
                 counter++;
+                qCounter++;
             }
-            else {   
+            else {
+                qCounter++;
                 complete();
             }
-            currentTotal.empty(); next(); 
+            currentTotal.empty(); next();
         };
         var next = function () {
             section.empty(); q.empty();
-            var percent = $.percentage(correctAnswers, qCounter);
-            currentTotal.append('Current Percent: ' + percent +'%');
+            currentTotal.append('Current Percent: ' + $.percentage(correctAnswers, qCounter) + '%');
             init();
         };
         var complete = function () {
@@ -62,7 +66,7 @@ $(document).ready(function () {
             $('#score').html('You answered ' + correctAnswers + ' out of ' + questions.length + ' questions correctly!');
         };
         return { init: init };
-}(questions);
+    }(questions);
 
     quiz.init();
 });
