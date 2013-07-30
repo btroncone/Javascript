@@ -25,8 +25,8 @@ $(document).ready(function () {
         var counter = 1, qCounter = 0, correctAnswers = 0, questionBox = $('#question'), ansOne = $('label[for="ansOne"]'), ansTwo = $('label[for="ansTwo"]'), section = $('section > h2'), q = $('.qq'), currentTotal = $('#currentTotal'), questions = ques;
 
         $('#enter').on('click', function () {
-            selectedValue = $("input[type='radio'][name='quiz']:checked").val();
-            submit();
+            var selectedValue = $("input[type='radio'][name='quiz']:checked").val();
+            submit(selectedValue);
         });       
         var init = function () { 
             ansOne.append(questions[qCounter].answer1);
@@ -34,7 +34,7 @@ $(document).ready(function () {
             questionBox.html('Question ' + counter + " :" + questions[qCounter].question);
         };
 
-        var submit = function () {
+        var submit = function (selectedValue) {
             console.log(selectedValue);
             if (selectedValue === questions[qCounter].correctAnswer) {
                 alert('Correct Answer!');
