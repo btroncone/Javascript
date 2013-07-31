@@ -54,10 +54,12 @@ $(document).ready(function () {
                 qCounter++;
                 complete();
             }
-            currentTotal.empty(); next();
+            currentTotal.empty(); 
+            next();
         };
         var next = function () {
-            section.empty(); q.empty();
+            section.empty(); 
+            q.empty();
             currentTotal.append('Current Percent: ' + $.percentage(correctAnswers, qCounter) + '%');
             init();
         };
