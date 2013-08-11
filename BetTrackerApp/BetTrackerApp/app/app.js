@@ -8,11 +8,6 @@ app.config(function ($routeProvider) {
                 controller: 'BetTableController',
                 templateUrl: '/app/partials/betTable.html'
             })
-        .when('/enterbet',
-            {
-                controller: 'BetTableController',
-                templateUrl: '/app/partials/enterBet.html'
-            })
         .when('/betdescription/:betID',
             {
                 controller: 'BetDescriptionController',
