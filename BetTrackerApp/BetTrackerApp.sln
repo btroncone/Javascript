@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetTrackerApp", "BetTrackerApp\BetTrackerApp.csproj", "{92C877B9-46B2-4F90-8244-9680FC13A136}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://briantroncone.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BetTrackerApp\\BetTrackerApp.csproj
+		SccProjectName1 = BetTrackerApp
+		SccLocalPath1 = BetTrackerApp
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92C877B9-46B2-4F90-8244-9680FC13A136}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92C877B9-46B2-4F90-8244-9680FC13A136}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92C877B9-46B2-4F90-8244-9680FC13A136}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92C877B9-46B2-4F90-8244-9680FC13A136}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
