@@ -59,5 +59,9 @@
         bets.splice($index, 1);
     };
     
+    factory.editBet = function($index, bet) {
+        bets[$index] = bet;
+    };
+    
     return factory;
 });
