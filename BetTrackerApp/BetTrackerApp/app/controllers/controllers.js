@@ -43,5 +43,22 @@ app.controller('BetDescriptionController', function ($scope, $routeParams, betFa
     }
 });
 
+app.controller('EditBetController', function ($scope, $routeParams, betFactory) {
+
+    init();
+    function init() {
+        var betID = ($routeParams.betID) ? parseInt($routeParams.betID) : 0;
+        if (betID > 0) {
+            $scope.bet = betFactory.getBet(betID);
+        }
+    }
+    $scope.editBet = function ($index, bet) {
+
+        betFactory.editBet($index, bet);
+        
+
+    };
+});
+
 
 
