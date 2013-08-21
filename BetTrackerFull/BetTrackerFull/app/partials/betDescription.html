@@ -1,0 +1,22 @@
+﻿<div class="container">
+    <h2 class="text-center">{{bet.StakeholderOne}} vs. {{bet.StakeholderTwo}}</h2>
+    <br />
+    <br />
+
+    <dl class="dl-horizontal">
+        <dt>Event Name:</dt>
+        <dd>{{bet.EventName}}</dd>
+        <dt>Event Date:</dt>
+        <dd>{{bet.EventDate}}</dd>
+        <dt>Bet Stakes:</dt>
+        <dd>{{bet.Stakes | currency}}</dd>
+        <dt>Bet Description:</dt>
+        <dd>{{bet.Description}}</dd>
+    </dl>
+    <br />
+    <div class="row">
+        <div class="span4 offset5">
+            <a href="#/bettable" class="btn btn-inverse">Back to Bet Table</a>
+        </div>
+    </div>
+</div>
