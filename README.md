@@ -13,4 +13,4 @@ from oldest to most recent. <br/>
 
 <b>August 2013</b> <br/>
 3.) BetTrackerApp - This is an Angularjs SPA that helps keep track of small wagers between friends. All bets are stored locally. <br/>
-4.) BetTrackerFull - This is the Bet Tracker App now with a backend using ASP.NET Web Api and Entity Framework. <br/>
+4.) BetTrackerFull - This is the Bet Tracker App now with a backend using ASP.NET Web API and Entity Framework. <br/>
