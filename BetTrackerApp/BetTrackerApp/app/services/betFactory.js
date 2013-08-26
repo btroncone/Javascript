@@ -1,8 +1,8 @@
 ﻿app.factory('betFactory', function () {
     var bets = [{
         id: 1,
-        name: 'Brian Troncone',
-        nameTwo: 'Miko Hukki',
+        name: 'Joe Jones',
+        nameTwo: 'Bob Smith',
         eventName: 'Ravens v Patriots',
         eventDate: 'Aug 6, 2013',
         stakes: '5.00',
@@ -10,8 +10,8 @@
         complete: false
     }, {
         id: 2,
-        name: 'Stephen Troncone',
-        nameTwo: 'Miko Hukki',
+        name: 'Jerry Smith',
+        nameTwo: 'Frank Reese',
         eventName: 'Browns v Bears',
         eventDate: 'Jun 14, 2013',
         stakes: '10.00',
@@ -21,7 +21,7 @@
     {
         id: 3,
         name: 'Ms. Boots',
-        nameTwo: 'Riko',
+        nameTwo: 'Riko Troncone',
         eventName: 'Battle for Food Bowl',
         eventDate: 'Dec 6, 2011',
         stakes: '15.00',
