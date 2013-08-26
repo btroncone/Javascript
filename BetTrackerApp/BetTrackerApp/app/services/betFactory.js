@@ -6,7 +6,7 @@
         eventName: 'Ravens v Patriots',
         eventDate: 'Aug 6, 2013',
         stakes: '5.00',
-        description: 'AFC Championship-Miko picks Pats',
+        description: 'AFC Championship-Bob Smith picks Pats',
         complete: false
     }, {
         id: 2,
