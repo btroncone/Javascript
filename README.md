@@ -3,7 +3,7 @@ Javascript
 
 Javascript Examples
 
-These are examples of my work as I am attempting to master javascript. Below I will give a brief description of each file
+These are examples of my work as I am learning javascript. Below I will give a brief description of each file
 from oldest to most recent. <br/>
 
 <b>July 2013</b> <br/>
